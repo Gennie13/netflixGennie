@@ -49,7 +49,7 @@ export default function page({params}: {params:Promise<{id:string}>}) {
             {showTrailer && (
                 <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
                     <div className="relative w-3/4 h-3/4">
-                        <iframe width={"100%"} height={"100%"} src={`https://www.youtube.com/embed/gTQ43OYYWHk?si=9pj0w58WTllWFeB9`} title={movie.title} allowFullScreen className="rounded-lg" frameborder="0"></iframe>
+                        <iframe width={"100%"} height={"100%"} src={`https://www.youtube.com/embed/gTQ43OYYWHk?si=9pj0w58WTllWFeB9`} title={movie.title} allowFullScreen className="rounded-lg" frameBorder="0" ></iframe>
                         <button onClick={()=>setShowTrailer(false)} className="absolute top-2 right-2 bg-red-600 text-white px-4 py-2 rounded-full">X</button>
                     </div>
 
